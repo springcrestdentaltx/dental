@@ -1,0 +1,120 @@
+.video-js {
+    position: relative!important;
+    padding-bottom: 56.25%!important;
+    height: 0!important;
+    overflow: hidden;
+    width: 80%!important;
+    
+}
+.video_holder .vjs_video_3-dimensions {
+    width: 100%;
+    height: 295.75px;
+}
+
+.video_holder {
+    margin-bottom: 30px;
+}
+
+.iholder {
+     position: relative;
+     padding-bottom: 50.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: auto; 
+     -webkit-overflow-scrolling:touch;
+     margin-bottom: 20px
+}
+
+.iholder iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+a[href^="tel"] {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.img_right {
+    float: right;
+    margin-left: 12px;
+}
+
+.img_left {
+    float: left;
+    margin-right: 12px;
+}
+
+
+.img-logo-container {
+    text-align: center;
+}
+.img-logo-container img {
+    max-width: 168px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.btm_cstmbtn {
+    background: linear-gradient(50deg, rgba(21, 217, 188, 0.65) 5%, rgb(169, 255, 188) 100%);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+.clm_3--container {
+    text-align: center;
+}
+
+.clm_3 {
+    display: inline-block;
+    max-width: 305px;
+    width: 100%;
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid;
+    min-height: 277px;
+    margin: 5px;
+}
+
+@media only screen and (min-width: 1025px){
+.featuredblock__item:only-child, .featuredblock__item:first-child:nth-last-child(2), .featuredblock__item:first-child:nth-last-child(2) ~ .featuredblock__item, .featuredblock__item:first-child:nth-last-child(3), .featuredblock__item:first-child:nth-last-child(3) ~ .featuredblock__item {
+    width: 33.3%;
+}
+}
+
+@media (max-width: 1024px){
+.featuredblock__item:nth-child(n+2) {
+    border-top: 2px solid #ecebeb;
+}
+
+.featuredblock__item {
+    width: 100%;
+    border-right: 0px;
+}
+.video-js {
+    width:100%!important;
+}
+}
+
+@media (max-width:767px) {
+    .img_right {
+        float: none;
+        margin-left: 0;
+    }
+    
+    .img_left {
+        float: none;
+        margin-right: 0;
+    }
+}
+
+.video-js {
+ 
+    margin: auto;
+}

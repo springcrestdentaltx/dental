@@ -1,0 +1,3 @@
+.map-label-hidden:before {
+	content: none !important;
+}

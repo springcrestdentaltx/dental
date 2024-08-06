@@ -1,0 +1,51 @@
+.featuredblock__container--clickable {
+    cursor: pointer;
+}
+
+.featuredblock__image{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.featuredblock__item.hasimage .featuredblock__image,
+.featuredblock__item.hasicon .featuredblock__icon {
+    min-height: 100px;
+}
+
+.featuredblock__button-text {
+    font-style: normal;
+}
+
+.featuredblocks-grid-a .featuredblock__image {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.featuredblocks-grid-b .featuredblock__image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.featuredblocks-grid-c .featuredblock__image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.featuredblocks-grid-d .featuredblock__image {
+    height: 48px;    
+    width: 48px;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.featuredblocks-grid-e .featuredblock__image {
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+}

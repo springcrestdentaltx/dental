@@ -1,0 +1,174 @@
+/* More Techniques https://css-tricks.com/perfect-full-page-background-image */
+
+.fullscreenbackground-image img {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+
+    z-index: -1;
+}
+
+.fullscreenbackground-image--centered {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+
+    z-index: -1;
+}
+
+.fullscreenbackground-image--centered img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+
+    z-index: -1;
+}
+
+.fullscreenbackground-video video{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: inherit;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.fullscreenbackground-video iframe{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.wrap_pause-play.fullscreenbackground_pause-play > div{
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    line-height: 2.2;
+}
+
+.wrap_pause-play.fullscreenbackground_pause-play > div span.icon, .wrap_pause-play.fullscreenbackground_pause-play > div span.icon:before{
+    font-size: 14px;
+}
+
+.wrap_pause-play.fullscreenbackground_pause-play > div span.icon.icon-play:before{
+    left: 58%;
+}
+
+.fullscreenbackground-slider .bx-viewport, .fullscreenbackground-slider .bx-wrapper{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100% !important;
+
+    z-index: -1;
+
+    /*position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;*/
+}
+
+.fullscreenbackground-slider .bxslider, .fullscreenbackground-slider .bxslider li{
+    height: 100% !important;
+}
+
+.fullscreenbackground-slider .bxslider li{
+    /*-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+*/
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.fullscreenbackground-slider .bx-wrapper .bx-viewport{
+    border: none !important;
+}
+
+.fullscreenbackground-video-youtube .video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+
+.fullscreenbackground-video-youtube .video-foreground,
+.fullscreenbackground-video-youtube .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.fullscreenbackground-video-youtube .mbYTP_wrapper {
+    position: fixed !important;
+    bottom: 0 !important;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreenbackground-video-youtube .video-foreground { height: 300%; top: -100%; }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreenbackground-video-youtube .video-foreground { width: 320%; left: -110%; }
+}
+
+.fullscreenbackground-video-vimeo .video-background {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+
+.fullscreenbackground-video-vimeo .video-foreground,
+.fullscreenbackground-video-vimeo .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreenbackground-video-vimeo .video-foreground { height: 300%; top: -100%; }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreenbackground-video-vimeo .video-foreground { width: 320%; left: -110%; }
+}
+
+.mm-opened.mm-background .mm-page {
+	background: none;
+}

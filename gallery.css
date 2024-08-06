@@ -1,0 +1,330 @@
+.gallery {
+  clear: both;
+  padding: 20px 0;
+}
+
+.gallery__container {
+  max-width: 100%;
+}
+
+.gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery__video {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.gallery .video-js .vjs-control-bar {
+  display: none !important;
+}
+
+.gallery .vjs-paused .vjs-big-play-button,
+.vjs-paused.vjs-has-started .vjs-big-play-button {
+  display: block;
+}
+
+.gallery li.items-container {
+  /*overflow: hidden;*/
+}
+
+.gallery .gallery-item .gallery-item--spacer {
+  position: relative;
+}
+
+.gallery .bxslider {
+  clear: both;
+}
+
+.gallery-slider .bx-wrapper .bx-controls {
+  margin-top: 20px;
+}
+
+#masonry-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery-row {
+  width: 100%;
+  float: left;
+}
+
+.gallery-grid--columns-1 {
+  width: 100%;
+}
+
+.gallery-grid--columns-2 {
+  width: 50%;
+}
+
+.gallery-grid--columns-3 {
+  width: 33.3333333333%;
+}
+
+.gallery-grid--columns-4 {
+  width: 25%;
+}
+
+.gallery-grid--columns-5 {
+  width: 20%;
+}
+
+.gallery-grid--columns-6 {
+  width: 16.6666666667%;
+}
+
+.gallery-grid--columns-7 {
+  width: 14.2857142857%;
+}
+
+.gallery-grid--columns-8 {
+  width: 12.5%;
+}
+
+.gallery-grid--columns-9 {
+  width: 11.1111111111%;
+}
+
+.gallery-grid--columns-10 {
+  width: 10%;
+}
+
+.gallery-grid--float-left {
+  float: left;
+}
+
+#gallery-bx-slider li > div {
+  position: relative;
+}
+
+.gallery__video {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.gallery-item--video-thumbnail {
+  position: relative;
+}
+
+.gallery-item--video-thumbnail .gallery-video-btn {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin: -25px 0 0 -25px;
+  z-index: 1;
+  font-size: 3em;
+  line-height: 1.5em;
+  padding: 0;
+  cursor: pointer;
+  opacity: 1;
+  background-color: transparent;
+  min-width: 1px;
+  border-style: none;
+  overflow: visible;
+  border-radius: 5px;
+}
+
+.gallery-item--video-thumbnail .gallery-video-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.45) 52%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.45) 52%, rgba(0, 0, 0, 0) 100%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.45) 52%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a6000000", endColorstr="#00000000", GradientType=1);
+  color: #a8a194;
+  font-size: 2.5em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.gallery-item--video-thumbnail .gallery-video-btn:after {
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  border-color: transparent white;
+  border-width: 7px 0 7px 10px;
+  margin: -7px 0 0 -2px;
+  pointer-events: none;
+}
+
+.gallery .gallery-video-btn:hover,
+.gallery .gallery-video-btn:focus {
+  background: none;
+}
+
+.gallery-item--video-thumbnail.gallery-item--masonry-video .gallery-video-btn:hover:before,
+.gallery-item--video-thumbnail.gallery-item--masonry-video .gallery-video-btn:hover:after {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.gallery .gallery-item .gallery-item--spacer {
+  position: relative;
+}
+
+.gallery .gallery-item .gallery-item--spacer .gallery-item--image {
+  max-width: 100%;
+}
+
+.gallery .gallery-item .gallery-item--square {
+  position: relative;
+  width: 100%;
+  padding: 0 0 100%;
+  overflow: hidden;
+}
+
+.gallery .gallery-item .gallery-item--rectangle {
+  position: relative;
+  width: 100%;
+  padding: 0 0 75%;
+  overflow: hidden;
+}
+
+.gallery-item--text-left {
+  text-align: left;
+}
+
+.gallery-item--text-right {
+  text-align: right;
+}
+
+.gallery-item--text-center {
+  text-align: center;
+}
+
+.gallery .highslide img {
+  display: block;
+  border: none !important;
+  background-color: transparent;
+}
+
+.gallery #masonry-container .highslide img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-slider .gallery-items-wrap a {
+  display: block;
+}
+
+.gallery-slider .gallery-items-wrap a:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.gallery .highslide img:hover {
+  border: none !important;
+}
+
+.gallery-item--square .gallery-item--video-thumbnail,
+.gallery-item--rectangle .gallery-item--video-thumbnail {
+  position: static;
+}
+
+.gallery-item--title,
+.gallery-item--description {
+  padding: 5px;
+}
+
+.highslide-container .gallery-item--highslide-title,
+.highslide-container .gallery-item--highslide-caption,
+.highslide-container .gallery-item--highslide-link {
+  padding-bottom: 5px;
+}
+
+.gallery-item--title,
+.highslide-container .gallery-item--highslide-title {
+  font: 16px/1.25 Arial, Helvetica, sans-serif;
+}
+
+.gallery-item--description,
+.highslide-container .gallery-item--highslide-caption,
+.highslide-container .gallery-item--highslide-link {
+  font: 14px/1.28571 Arial, Helvetica, sans-serif;
+}
+
+.gallery-items-wrap {
+  display: flex;
+}
+
+/* SMBWMGR-4137 */
+.gallery-item--title {
+  overflow: hidden;
+}
+
+.gallery .gallery-slider .gallery-item img {
+  margin: 0 auto;
+}
+
+.brightness {
+  filter: brightness(50%);
+}
+
+.gallery-title-text-left {
+  text-align: left;
+}
+
+.gallery-title-text-center {
+  text-align: center;
+}
+
+.gallery-title-text-right {
+  text-align: right;
+}
+
+.gallery .vjs-vimeo .vimeoFrame {
+  margin: unset !important;
+  padding-bottom: unset !important;
+  width: unset !important;
+  height: unset !important;
+  position: unset !important;
+  overflow: unset !important;
+}
+.gallery .vjs-vimeo .vimeoFrame iframe.vimeoplayer {
+  pointer-events: none;
+  max-height: 100%;
+  top: 0;
+}
+.gallery .vjs-vimeo .vimeoFrame iframe.vimeoplayer.vimeoStarted {
+  pointer-events: all;
+}
+.gallery .vjs-vimeo .vjs-poster {
+  cursor: pointer;
+}
+.gallery .vjs-vimeo .vjs-poster.noVimeoPoster {
+  cursor: pointer;
+  display: block !important;
+  background-color: transparent;
+}
+.gallery .vjs-vimeo .vjs-big-play-button {
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=gallery.css.map */

@@ -1,0 +1,506 @@
+/*   OLD CSS FOR ADA TOLLBAR LEFT JUST FOR SAFETY - REMOVE IT IF EVERTHING IS OK WITH THE NEW CODE  */
+/*@font-face {
+	font-family: "font-awesome";
+	src: url("../../../common/fonts/font-awesome/fontawesome-webfont.eot");
+	src: url("../../../common/fonts/font-awesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../../common/fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("../../../common/fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("../../../common/fonts/font-awesome/fontawesome-webfont.svg#font-awesome") format("svg");
+}
+
+
+.ada_toolbar {
+	font: 12px/1.25 Arial, Helvetica, sans-serif;
+	position: fixed;
+	top: 100px;
+	left: 0;
+	z-index: 10001; 
+}
+.ada_toolbar,
+.ada_toolbar * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: none !important;
+}
+.ada_toolbar.right {
+	left: auto;
+	right: 0;
+}
+.ada_toolbar a,
+.ada_modal a {
+	cursor: pointer;
+	font: 12px/1 Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.ada_toolbar a span,
+.ada_modal a span {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+.ada_toolbar--content {
+	padding-left: 25px;
+	opacity: 0.84;
+	border-radius: 4px 4px 0 0;
+	background-image: linear-gradient(to bottom, #f8fbff, #dddfe3);
+	box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .2);
+	border: solid rgba(194, 198, 204, .4);
+	border-width: 1px 1px 0 1px;
+	transform: rotate(90deg);
+	transform-origin: 0 0 0;
+	position: absolute;
+	top: 0;
+	left: 28px;
+}
+.ada_toolbar.right .ada_toolbar--content {
+	transform: rotate(-90deg);
+	top: 161px;
+	left: -28px;
+	padding: 0 27px 0 0;
+}
+.ada_toolbar .ada_toolbar--content:before {
+	transform: rotate(-90deg);
+	position: absolute;
+	bottom: 6px;
+	left: 31px;
+	font: 13px/1 "font-awesome";
+	content: '\f193';
+}
+.ada_toolbar.right .ada_toolbar--content:before {
+	transform: rotate(90deg);
+	left: auto;
+	right: 31px;
+}
+.ada_toolbar .ada_toolbar--content:after {
+	width: 2px;
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 23px;
+	background: rgba(193, 193, 193, .6);
+	border: solid rgba(255, 255, 255, .5);
+	border-width: 0 1px 0 0;
+}
+.ada_toolbar.right .ada_toolbar--content:after {
+	left: auto;
+	right: 23px;
+	border-width: 0 0 0 1px;
+}
+
+a.ada_toolbar--opener {
+	display: block;
+	white-space: nowrap;
+	position: relative;
+	border: solid transparent;
+	border-width: 8px 13px 7px 25px;
+	color: #313233;
+}
+a.ada_toolbar--opener:hover,
+a.ada_toolbar--opener:active,
+a.ada_toolbar--opener:focus {
+	text-decoration: underline;
+	color: #313233;
+}
+.ada_toolbar.right a.ada_toolbar--opener {
+	border-width: 7px 28px 8px 7px;
+}
+.ada_toolbar--close {
+	width: 22px;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: .5;
+	color: #313233;
+}
+.ada_toolbar.right .ada_toolbar--close {
+	left: auto;
+	right: 0;
+}
+
+.ada_toolbar--close:hover,
+.ada_toolbar--close:active,
+.ada_toolbar--close:focus {
+	opacity: 1;
+	color: #313233;
+}
+.ada_toolbar--close:before,
+.ada_toolbar--close:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 70%;
+	top: 50%;
+	left: 0;
+	margin: -2px 0 0 4px;
+	background: #313233;
+}
+.ada_toolbar.right .ada_toolbar--close:before,
+.ada_toolbar.right .ada_toolbar--close:after {
+	margin: -2px 0 0 2px;
+}
+.ada_toolbar--close:before {
+	transform: rotate(45deg);
+}
+.ada_toolbar--close:after {
+	transform: rotate(-45deg);
+}
+
+
+.ada_modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 10001;
+}
+.ada_modal--container {
+	max-width: 280px;
+	min-width: 216px;
+	padding: 41px 32px 26px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0 2px 44px 22px rgba(0, 0, 0, .5);
+	text-align: center;
+	color: #313233;
+}
+.ada_modal,
+.ada_modal p,
+a.ada_modal--link,
+.ada_modal--close {
+	font: 15px/20px Arial, Helvetica, sans-serif;
+}
+.ada_modal--description {
+	margin: 0 0 19px;
+}
+a.ada_modal--link {
+	min-width: 200px;
+	color: #fff;
+	display: table;
+	margin: 0 auto;
+	padding: 7px 8px;
+	border-radius: 4px;
+	background-color: #00a2f8;
+}
+.ada_modal--link:hover,
+.ada_modal--link:active,
+.ada_modal--link:focus {
+	text-decoration: underline;
+	color: #fff;
+}
+.ada_modal--close {
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	top: 8px;
+	right: 10px;
+}
+.ada_modal--close:before,
+.ada_modal--close:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	margin-top: -1px;
+	background: #bec7cc;
+}
+.ada_modal--close:hover:before,
+.ada_modal--close:hover:after,
+.ada_modal--close:active:before,
+.ada_modal--close:active:after,
+.ada_modal--close:focus:before,
+.ada_modal--close:focus:after {
+	background: #000;
+}
+.ada_modal--close:before {
+	transform: rotate(45deg);
+}
+.ada_modal--close:after {
+	transform: rotate(-45deg);
+}
+*/
+
+
+
+
+
+/***   Ada style for top/left/bottom/right version   ***/
+
+
+.ada_toolbar {
+	font: 12px/1.25 Arial, Helvetica, sans-serif;
+	position: fixed;
+	background: -moz-linear-gradient(90deg, rgba(221,223,227,0.85) 0%, rgba(248,251,255,0.85) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(248,251,255,0.85)), color-stop(100%, rgba(221,223,227,0.85)));
+    background: -webkit-linear-gradient(90deg, rgba(221,223,227,0.85) 0%, rgba(248,251,255,0.85) 100%);
+    background: -o-linear-gradient(90deg, rgba(221,223,227,0.85) 0%, rgba(248,251,255,0.85) 100%);
+    background: -ms-linear-gradient(90deg, rgba(221,223,227,0.85) 0%, rgba(248,251,255,0.85) 100%);
+    background: linear-gradient(0deg, rgba(221,223,227,0.85) 0%, rgba(248,251,255,0.85) 100%);
+	box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .2);
+	border: 1px solid rgba(194, 198, 204, .4);
+	border-radius: 0 0 4px 4px;
+	height: 28px;
+	z-index: 10001;
+}
+
+.ada_toolbar,
+.ada_toolbar * {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: none !important;
+}
+
+.ada_toolbar.top {
+	top: 0;
+	right: 100px;
+}
+
+.ada_toolbar.top .ada_toolbar--close {
+    border-left: 1px solid rgba(193, 193, 193, .6);
+}
+
+.ada_toolbar.top .ada_toolbar--opener:before {
+	bottom: 7px;
+	left: 10px;
+}
+
+.ada_toolbar.left {
+	top: 150px;
+	left: -68px;
+	transform: rotate(-90deg);
+}
+
+.ada_toolbar.left .ada_toolbar--opener {
+	padding: 7px 30px 7px 10px;
+}
+
+.ada_toolbar.left .ada_toolbar--close {
+    border-left: 1px solid rgba(193, 193, 193, .6);
+}
+
+.ada_toolbar.left .ada_toolbar--opener:before {
+	transform: rotate(90deg);
+	right: 10px;
+	bottom: 5px;
+}
+
+.ada_toolbar.right {
+	top: 150px;
+	right: -68px;
+	transform: rotate(90deg);
+}
+
+.ada_toolbar.right .ada_toolbar--opener {
+    order: 1;
+    padding: 7px 10px 7px 30px;
+}
+
+.ada_toolbar.right .ada_toolbar--close {
+    border-right: 1px solid rgba(193, 193, 193, .6);
+}
+
+.ada_toolbar.right .ada_toolbar--opener:before {
+	transform: rotate(-90deg);
+	bottom: 7px;
+    left: 10px;
+}
+
+.ada_toolbar.bottom {
+	bottom: 0;
+	right: 100px;
+	transform: rotate(180deg);
+}
+
+.ada_toolbar.bottom .ada_toolbar--opener {
+    transform: rotate(180deg);
+    order: 2;
+}
+
+.ada_toolbar.bottom .ada_toolbar--opener:before{
+    bottom: 7px;
+	left: 10px;
+}
+
+.ada_toolbar.bottom .ada_toolbar--close {
+    border-right: 1px solid rgba(193, 193, 193, .6);
+}
+
+.ada_toolbar a,
+.ada_modal a {
+	cursor: pointer;
+	font: 12px/1 Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.ada_toolbar a span,
+.ada_modal a span {
+	font-size: 0;
+	display: none;
+}
+
+.ada_toolbar--content {
+    display: flex;
+}
+
+
+
+
+
+.ada_toolbar--opener {
+	flex: 0 0 auto;
+	white-space: nowrap;
+	position: relative;
+	color: #313233;
+	padding: 7px 10px 7px 30px;
+	height: 26px;
+}
+
+.ada_toolbar--opener:hover,
+.ada_toolbar--opener:active,
+.ada_toolbar--opener:focus {
+	text-decoration: underline;
+	color: #313233;
+}
+
+.ada_toolbar--opener:before {
+	position: absolute;
+	font: 13px/1 "font-awesome";
+	content: '\f193';
+}
+
+.ada_toolbar--close {
+    flex: 0 0 auto;
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.ada_toolbar--close:after,
+.ada_toolbar--close:before {
+    content: "";
+    width: 60%;
+    height: 2px;
+    background-color: rgba(49,50,51,0.5);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.ada_toolbar--close:after {
+     transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.ada_toolbar--close:before {
+     transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.ada_toolbar--close:hover:after,
+.ada_toolbar--close:hover:before,
+.ada_toolbar--close:active:after,
+.ada_toolbar--close:active:before,
+.ada_toolbar--close:focus:after,
+.ada_toolbar--close:focus:before {
+	background-color: rgba(49,50,51,1);
+}
+
+
+
+
+
+
+.ada_modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 10001;
+}
+.ada_modal--container {
+	max-width: 280px;
+	min-width: 216px;
+	padding: 41px 32px 26px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0 2px 44px 22px rgba(0, 0, 0, .5);
+	text-align: center;
+	color: #313233;
+}
+.ada_modal,
+.ada_modal p,
+a.ada_modal--link,
+.ada_modal--close {
+	font: 15px/20px Arial, Helvetica, sans-serif;
+}
+.ada_modal--description {
+	margin: 0 0 19px;
+}
+a.ada_modal--link {
+	min-width: 200px;
+	color: #fff;
+	display: table;
+	margin: 0 auto;
+	padding: 7px 8px;
+	border-radius: 4px;
+	background-color: #00a2f8;
+}
+.ada_modal--link:hover,
+.ada_modal--link:active,
+.ada_modal--link:focus {
+	text-decoration: underline;
+	color: #fff;
+}
+.ada_modal--close {
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	position: absolute;
+	top: 8px;
+	right: 10px;
+}
+.ada_modal--close:before,
+.ada_modal--close:after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	margin-top: -1px;
+	background: #bec7cc;
+}
+.ada_modal--close:hover:before,
+.ada_modal--close:hover:after,
+.ada_modal--close:active:before,
+.ada_modal--close:active:after,
+.ada_modal--close:focus:before,
+.ada_modal--close:focus:after {
+	background: #000;
+}
+.ada_modal--close:before {
+	transform: rotate(45deg);
+}
+.ada_modal--close:after {
+	transform: rotate(-45deg);
+}
+#ada-toolbar {
+	display: none;
+}
