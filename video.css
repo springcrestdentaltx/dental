@@ -1,0 +1,35 @@
+.edit-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 20%; }
+
+.video-js {
+  width: 100%; }
+
+.video,
+.youtubevid-item__video {
+  position: relative; }
+
+.youtubevid-item__thumbnail {
+  background: black;
+  position: absolute !important;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex !important;
+  justify-content: center;
+  align-items: center; }
+  .youtubevid-item__thumbnail.clicked {
+    display: none !important; }
+
+.youtubevid-item__thumbnail .icon:before {
+  color: white;
+  cursor: pointer;
+  font-size: 60px; }
+
+/*# sourceMappingURL=video.css.map */
